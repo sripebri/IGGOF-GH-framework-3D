@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IGDOF-GH — Kerangka Terpadu 3D Interaktif</title>
+<title>IGDOF-GH — Interactive 3D Integrated Framework</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <style>
@@ -204,43 +204,43 @@ body{font-family:var(--f-body);color:var(--text);}
     <div class="tb-logo">🌋</div>
     <div>
       <div class="tb-name">IGDOF-GH Framework</div>
-      <span class="tb-sub">Integrated Geothermal Development · 5 Lapisan Terpadu</span>
+      <span class="tb-sub">Integrated Geothermal Development · 5 Integrated Layers</span>
     </div>
   </div>
   <div class="tb-layers" id="tbLayers">
-    <button class="tb-layer on" style="--lc:var(--c1)" data-l="0" onclick="focusLayer(0,this)"><span class="ldot"></span>IKG</button>
-    <button class="tb-layer" style="--lc:var(--c2)" data-l="1" onclick="focusLayer(1,this)"><span class="ldot"></span>Kelayakan</button>
-    <button class="tb-layer" style="--lc:var(--c3)" data-l="2" onclick="focusLayer(2,this)"><span class="ldot"></span>Pengeboran</button>
-    <button class="tb-layer" style="--lc:var(--c4)" data-l="3" onclick="focusLayer(3,this)"><span class="ldot"></span>Finansial</button>
-    <button class="tb-layer" style="--lc:var(--c5)" data-l="4" onclick="focusLayer(4,this)"><span class="ldot"></span>Kaskade H₂</button>
-  </div>
-  <div class="tb-hint">Klik objek · Seret putar · Scroll zoom</div>
+<button class="tb-layer on" style="--lc:var(--c1)" data-l="0" onclick="focusLayer(0,this)"><span class="ldot"></span>IKG</button>
+<button class="tb-layer" style="--lc:var(--c2)" data-l="1" onclick="focusLayer(1,this)"><span class="ldot"></span>Feasibility</button>
+<button class="tb-layer" style="--lc:var(--c3)" data-l="2" onclick="focusLayer(2,this)"><span class="ldot"></span>Drilling</button>
+<button class="tb-layer" style="--lc:var(--c4)" data-l="3" onclick="focusLayer(3,this)"><span class="ldot"></span>Financial</button>
+<button class="tb-layer" style="--lc:var(--c5)" data-l="4" onclick="focusLayer(4,this)"><span class="ldot"></span>H₂ Cascade</button>
+</div>
+<div class="tb-hint">Click objects · Drag to rotate · Scroll to zoom</div>
 </div>
 
 <!-- OVERVIEW PANEL -->
 <div class="overview">
-  <div class="ov-title">5 Lapisan IGDOF-GH</div>
-  <div class="ov-item" onclick="focusLayer(0)"><span class="ov-num">L1</span><span class="ov-dot" style="background:var(--c1)"></span><span class="ov-name">Penilaian IKG</span></div>
-  <div class="ov-item" onclick="focusLayer(1)"><span class="ov-num">L2</span><span class="ov-dot" style="background:var(--c2)"></span><span class="ov-name">Kelayakan 4 Dimensi</span></div>
-  <div class="ov-item" onclick="focusLayer(2)"><span class="ov-num">L3</span><span class="ov-dot" style="background:var(--c3)"></span><span class="ov-name">Pengeboran Bertahap</span></div>
-  <div class="ov-item" onclick="focusLayer(3)"><span class="ov-num">L4</span><span class="ov-dot" style="background:var(--c4)"></span><span class="ov-name">Inovasi Finansial</span></div>
-  <div class="ov-item" onclick="focusLayer(4)"><span class="ov-num">L5</span><span class="ov-dot" style="background:var(--c5)"></span><span class="ov-name">Kaskade H₂ Hijau</span></div>
+  <div class="ov-title">5 IGDOF-GH Layers</div>
+  <div class="ov-item" onclick="focusLayer(0)"><span class="ov-num">L1</span><span class="ov-dot" style="background:var(--c1)"></span><span class="ov-name">GFI Assessment</span></div>
+  <div class="ov-item" onclick="focusLayer(1)"><span class="ov-num">L2</span><span class="ov-dot" style="background:var(--c2)"></span><span class="ov-name">4-Dimensional Feasibility</span></div>
+  <div class="ov-item" onclick="focusLayer(2)"><span class="ov-num">L3</span><span class="ov-dot" style="background:var(--c3)"></span><span class="ov-name">Staged Drilling</span></div>
+  <div class="ov-item" onclick="focusLayer(3)"><span class="ov-num">L4</span><span class="ov-dot" style="background:var(--c4)"></span><span class="ov-name">Financial Innovation</span></div>
+  <div class="ov-item" onclick="focusLayer(4)"><span class="ov-num">L5</span><span class="ov-dot" style="background:var(--c5)"></span><span class="ov-name">Green H₂ Cascade</span></div>
 </div>
 
 <!-- LEGEND -->
 <div class="legend">
-  <div class="leg"><div class="leg-dot" style="background:var(--c1)"></div>L1 — Indeks Kelayakan Geothermal</div>
-  <div class="leg"><div class="leg-dot" style="background:var(--c2)"></div>L2 — Kelayakan Awal 4 Dimensi</div>
-  <div class="leg"><div class="leg-dot" style="background:var(--c3)"></div>L3 — Pengeboran + Pintu Keputusan</div>
-  <div class="leg"><div class="leg-dot" style="background:var(--c4)"></div>L4 — Inovasi Finansial & Kebijakan</div>
-  <div class="leg"><div class="leg-dot" style="background:var(--c5)"></div>L5 — Kaskade Hidrogen Hijau</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--c1)"></div>L1 — Geothermal Feasibility Index</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--c2)"></div>L2 — Initial 4-Dimensional Feasibility</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--c3)"></div>L3 — Drilling + Decision Gate</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--c4)"></div>L4 — Financial & Policy Innovation</div>
+  <div class="leg"><div class="leg-dot" style="background:var(--c5)"></div>L5 — Green Hydrogen Cascade</div>
 </div>
 
 <!-- DETAIL PANEL -->
 <div class="detail" id="detailPanel">
   <button class="detail-close" onclick="closeDetail()">✕</button>
   <div class="detail-header">
-    <div class="detail-layer-num" id="dlNum">LAPISAN 01 / 05</div>
+    <div class="detail-layer-num" id="dlNum">LAYER 01 / 05</div>
     <div class="detail-title" id="dlTitle">—</div>
     <div class="detail-sub" id="dlSub">—</div>
     <div class="detail-accent" id="dlAccent"></div>
@@ -251,19 +251,19 @@ body{font-family:var(--f-body);color:var(--text);}
 <!-- BOTTOM NAV -->
 <div class="bottomnav">
   <button class="bnbtn on" style="--c:var(--c1)" data-n="0" onclick="focusLayer(0,this)">
-    <span class="bn-icon">🔍</span><span class="bn-name">L1 Penilaian IKG</span>
+    <span class="bn-icon">🔍</span><span class="bn-name">L1 GFI Assessment</span>
   </button>
   <button class="bnbtn" style="--c:var(--c2)" data-n="1" onclick="focusLayer(1,this)">
-    <span class="bn-icon">📋</span><span class="bn-name">L2 Kelayakan</span>
+    <span class="bn-icon">📋</span><span class="bn-name">L2 Feasibility</span>
   </button>
   <button class="bnbtn" style="--c:var(--c3)" data-n="2" onclick="focusLayer(2,this)">
-    <span class="bn-icon">⛏️</span><span class="bn-name">L3 Pengeboran</span>
+    <span class="bn-icon">⛏️</span><span class="bn-name">L3 Drilling</span>
   </button>
   <button class="bnbtn" style="--c:var(--c4)" data-n="3" onclick="focusLayer(3,this)">
-    <span class="bn-icon">💰</span><span class="bn-name">L4 Finansial</span>
+    <span class="bn-icon">💰</span><span class="bn-name">L4 Financial</span>
   </button>
   <button class="bnbtn" style="--c:var(--c5)" data-n="4" onclick="focusLayer(4,this)">
-    <span class="bn-icon">⚗️</span><span class="bn-name">L5 Kaskade H₂</span>
+    <span class="bn-icon">⚗️</span><span class="bn-name">L5 H₂ Cascade</span>
   </button>
 </div>
 
@@ -275,73 +275,73 @@ body{font-family:var(--f-body);color:var(--text);}
 ══════════════════════════════════════════════ */
 const LAYERS = [
   {
-    id:0, name:'Penilaian Terpadu IKG', sub:'Indeks Kelayakan Geothermal (IKG)',
-    num:'LAPISAN 01 / 05', color:'#ff6b2b', icon:'🔍',
-    desc:'IGDOF-GH mengganti pendekatan eksplorasi sekuensial dengan penilaian simultan multidisiplin. Seluruh data geologi, geofisika, geokimia, regulasi, dan sosial disintesis menjadi satu skor IKG (0–10). Inovasi ML-IKG mempersempit ketidakpastian dari ±40% menjadi ±15–20%.',
-    metrics:[['≥6/10','Skor Go/No-Go'],['±15–20%','Uncertainty ML-IKG'],['5 Dimensi','Komponen IKG'],['78%','Konfirmasi Sumur']],
+    id:0, name:'Integrated GFI Assessment', sub:'Geothermal Feasibility Index (GFI)',
+    num:'LAYER 01 / 05', color:'#ff6b2b', icon:'🔍',
+    desc:'IGDOF-GH replaces the sequential exploration approach with simultaneous multidisciplinary assessment. All geological, geophysical, geochemical, regulatory, and social data are synthesized into a single GFI score (0–10). The ML-GFI innovation reduces uncertainty from ±40% to ±15–20%.',
+    metrics:[['≥6/10','Go/No-Go Score'],['±15–20%','ML-GFI Uncertainty'],['5 Dimensions','GFI Components'],['78%','Well Confirmation']],
     items:[
-      ['Geologi (25%)', 'Pemetaan sistem vulkanik Kuarter, zona sesar permeabel, stratigrafi reservoir. SAR satellite untuk deteksi manifestasi tersembunyi.'],
-      ['Geofisika (25%)', 'Magnetotelluric (MT) survey untuk anomali konduktivitas <10 Ω·m, gravity survey, microseismic monitoring permeabilitas.'],
-      ['Geokimia (20%)', 'Rasio Cl/B/Li untuk asal-usul fluida. Geothermometer Silika & Na-K untuk estimasi suhu reservoir tanpa bor (akurasi ±10–15%).'],
-      ['Regulasi & Tata Lahan (15%)', 'Klasifikasi kawasan RTRW, status konservasi, tumpang-tindih lahan. Hambatan yang sering diabaikan namun paling mahal jika terlambat.'],
-      ['Penerimaan Sosial (15%)', 'Pemetaan komunitas terdampak, evaluasi sejarah konflik lahan, kapasitas lokal menyerap manfaat ekonomi.'],
+      ['Geology (25%)', 'Mapping of Quaternary volcanic systems, permeable fault zones, and reservoir stratigraphy. SAR satellite for detecting hidden manifestations.'],
+      ['Geophysics (25%)', 'Magnetotelluric (MT) survey for conductivity anomalies <10 Ω·m, gravity survey, and microseismic monitoring for permeability.'],
+      ['Geochemistry (20%)', 'Cl/B/Li ratios for fluid origin. Silica & Na-K geothermometers for estimating reservoir temperature without drilling (±10–15% accuracy).'],
+      ['Regulation & Land Use (15%)', 'RTRW zoning classification, conservation status, land overlap. Often overlooked but the most costly if discovered late.'],
+      ['Social Acceptance (15%)', 'Mapping affected communities, evaluating land conflict history, and local capacity to absorb economic benefits.'],
     ],
-    innovations:['ML Ensemble IKG: Random Forest + Gradient Boosting dari data MT + gravity + geokimia + SAR — akurasi konfirmasi 78% vs rata-rata global 65%.'],
+    innovations:['ML Ensemble GFI: Random Forest + Gradient Boosting from MT + gravity + geochemistry + SAR data — 78% confirmation accuracy vs global average of 65%.'],
   },
   {
-    id:1, name:'Kelayakan Awal 4 Dimensi', sub:'EPI · Real Options · Slim-Hole · SWGL',
-    num:'LAPISAN 02 / 05', color:'#3b9aff', icon:'📋',
-    desc:'Sebelum pengeboran, IGDOF-GH mensyaratkan penilaian kelayakan empat dimensi secara PARALEL, bukan sekuensial. Ini memotong waktu penilaian dari 4–7 tahun menjadi 18–24 bulan dan menghindari pemborosan akibat hambatan yang ditemukan terlambat.',
-    metrics:[['4 Dimensi','Paralel Simultan'],['18–24 bln','Waktu Perizinan'],['30–40%','Hemat Biaya Slim-Hole'],['P10/P50/P90','Metode Estimasi']],
+    id:1, name:'4-Dimensional Early Feasibility', sub:'EPI · Real Options · Slim-Hole · SWGL',
+    num:'LAYER 02 / 05', color:'#3b9aff', icon:'📋',
+    desc:'Before drilling, IGDOF-GH requires a four-dimensional feasibility assessment conducted in PARALLEL, not sequentially. This reduces evaluation time from 4–7 years to 18–24 months and avoids waste caused by late-discovered constraints.',
+    metrics:[['4 Dimensions','Parallel Assessment'],['18–24 mo','Permitting Time'],['30–40%','Slim-Hole Cost Saving'],['P10/P50/P90','Estimation Method']],
     items:[
-      ['Kelayakan Teknis', 'Suhu reservoir ≥150°C (flash) atau ≥100°C (binary). Permeabilitas ≥10⁻¹⁵ m². Kapasitas P50 ≥10 MW. Slim-Hole Drilling sebagai Fase 0 (diameter 4–6", biaya 30–40% lebih murah).'],
-      ['Kelayakan Ekonomi', 'IRR target ≥15% untuk investor swasta. Payback period <12 tahun. Real Options Analysis (ROA) — memperlakukan setiap pintu keputusan sebagai opsi finansial, menangkap nilai fleksibilitas yang di-undervalue oleh NPV konvensional.'],
-      ['Kelayakan Lingkungan — EPI', 'Environmental Pre-Screening Index: dilakukan paralel dengan IKG sejak hari pertama. Evaluasi H₂S, subsidence, water budget, sensitivitas ekosistem. Memangkas waktu AMDAL dari 2–3 tahun menjadi 6–12 bulan.'],
-      ['Kelayakan Regulasi — SWGL', 'Single Window Geothermal Licensing: satu portal digital yang memproses izin ESDM + KLHK + BPN secara paralel. Target: 18–24 bulan vs rata-rata 4–7 tahun saat ini. Selaras dengan RUU EBET 2024.'],
+      ['Technical Feasibility', 'Reservoir temperature ≥150°C (flash) or ≥100°C (binary). Permeability ≥10⁻¹⁵ m². Capacity P50 ≥10 MW. Slim-Hole Drilling as Phase 0 (diameter 4–6", 30–40% lower cost).'],
+      ['Economic Feasibility', 'Target IRR ≥15% for private investors. Payback period <12 years. Real Options Analysis (ROA) — treating each decision gate as a financial option, capturing flexibility value undervalued by conventional NPV.'],
+      ['Environmental Feasibility — EPI', 'Environmental Pre-Screening Index: conducted in parallel with GFI from day one. Evaluates H₂S, subsidence, water budget, and ecosystem sensitivity. Reduces EIA time from 2–3 years to 6–12 months.'],
+      ['Regulatory Feasibility — SWGL', 'Single Window Geothermal Licensing: a digital portal processing permits from ESDM + KLHK + BPN in parallel. Target: 18–24 months vs current 4–7 years. Aligned with the 2024 EBET Bill.'],
     ],
-    innovations:['EPI (Environmental Pre-Screening Index) paralel dengan IKG.','Real Options Analysis untuk valuasi investasi bertahap.','Slim-Hole Drilling Fase 0 sebagai langkah konfirmasi berbiaya rendah.'],
+    innovations:['EPI (Environmental Pre-Screening Index) runs in parallel with GFI.','Real Options Analysis for staged investment valuation.','Slim-Hole Drilling Phase 0 as a low-cost confirmation step.'],
   },
   {
-    id:2, name:'Pengeboran Bertahap + Pintu Keputusan', sub:'Risk-Gating · 4 Fase · GERG',
-    num:'LAPISAN 03 / 05', color:'#8b5cf6', icon:'⛏️',
-    desc:'Metodologi risk-gating mengubah komitmen modal besar di awal menjadi investasi progresif berbasis data. Setiap fase dipisahkan oleh pintu keputusan formal. Pemerintah menanggung risiko eksplorasi awal melalui GERG, menurunkan premi risiko investor swasta 30–40%.',
-    metrics:[['4 Fase','Bertahap + Go/No-Go'],['USD 1–2jt','Biaya Slim-Hole'],['30–40%','Turun Premi Risiko'],['USD 50–80jt','Total Proyek 10MW']],
+    id:2, name:'Staged Drilling + Decision Gates', sub:'Risk-Gating · 4 Phases · GERG',
+    num:'LAYER 03 / 05', color:'#8b5cf6', icon:'⛏️',
+    desc:'The risk-gating methodology transforms large upfront capital commitments into progressive data-driven investments. Each phase is separated by formal decision gates. The government absorbs early exploration risk through GERG, reducing private investor risk premiums by 30–40%.',
+    metrics:[['4 Phases','Staged + Go/No-Go'],['USD 1–2M','Slim-Hole Cost'],['30–40%','Risk Premium Reduction'],['USD 50–80M','Total 10MW Project']],
     items:[
-      ['Fase 0 — Slim-Hole (6–12 bln)', 'Sumur diameter kecil 4–6" untuk konfirmasi suhu dan stratigrafi. Biaya USD 1–2 juta vs USD 5–8 juta sumur penuh. Go jika suhu ≥100°C terdeteksi. Didanai pemerintah + GERG.'],
-      ['Fase 1 — Eksplorasi (12–18 bln)', '1–2 sumur eksplorasi untuk konfirmasi suhu ≥150°C dan permeabilitas. Go jika flow rate memadai. Didanai pemerintah + ADB ETM.'],
-      ['Fase 2 — Delineasi (12–24 bln)', '2–3 sumur delineasi untuk menetapkan batas dan kapasitas P50 reservoir. Go jika kapasitas P50 ≥ target dan PPA dapat dinegosiasikan. Swasta + blended finance.'],
-      ['Fase 3 — Produksi (24–36 bln)', 'Sumur produksi penuh + konstruksi pembangkit + unit AWE. Go setelah PPA & H₂ offtake ditandatangani. Project finance + offtake collateral.'],
+      ['Phase 0 — Slim-Hole (6–12 mo)', 'Small-diameter wells (4–6") for temperature and stratigraphy confirmation. Cost USD 1–2M vs USD 5–8M full wells. Go if ≥100°C detected. Funded by government + GERG.'],
+      ['Phase 1 — Exploration (12–18 mo)', '1–2 exploration wells to confirm ≥150°C temperature and permeability. Go if flow rate is sufficient. Funded by government + ADB ETM.'],
+      ['Phase 2 — Delineation (12–24 mo)', '2–3 delineation wells to define reservoir boundaries and P50 capacity. Go if P50 meets target and PPA can be negotiated. Private + blended finance.'],
+      ['Phase 3 — Production (24–36 mo)', 'Full production wells + power plant construction + AWE unit. Go after PPA & H₂ offtake agreements are signed. Project finance + offtake collateral.'],
     ],
-    innovations:['GERG (Geothermal Exploration Risk Guarantee): pemerintah menanggung 50–70% biaya sumur eksplorasi jika negatif. Serupa skema KfW Jerman di Afrika Timur.'],
+    innovations:['GERG (Geothermal Exploration Risk Guarantee): government covers 50–70% of exploration well costs if unsuccessful. Similar to Germany’s KfW scheme in East Africa.'],
   },
   {
-    id:3, name:'Inovasi Finansial & Kebijakan', sub:'GERG · GPTC · Blended Finance · IGHA',
-    num:'LAPISAN 04 / 05', color:'#f59e0b', icon:'💰',
-    desc:'Lapisan 4 mengatasi hambatan finansial dan kebijakan yang selama ini menghambat akselerasi pengembangan panas bumi Indonesia. Empat inovasi finansial dan satu inovasi kelembagaan bekerja bersama untuk menurunkan biaya modal dan meningkatkan bankability proyek.',
-    metrics:[['50:30:20','Blended Finance'],['USD 3/kg','GPTC H₂ Insentif'],['WACC ~7%','vs 12% tanpa blended'],['USD 9–11jt','Pendapatan/Tahun']],
+    id:3, name:'Financial & Policy Innovation', sub:'GERG · GPTC · Blended Finance · IGHA',
+    num:'LAYER 04 / 05', color:'#f59e0b', icon:'💰',
+    desc:'Layer 4 addresses financial and policy barriers that have hindered geothermal development in Indonesia. Four financial innovations and one institutional innovation work together to reduce capital costs and improve project bankability.',
+    metrics:[['50:30:20','Blended Finance'],['USD 3/kg','GPTC H₂ Incentive'],['WACC ~7%','vs 12% without blended'],['USD 9–11M','Annual Revenue']],
     items:[
-      ['Blended Finance 50:30:20', '50% pinjaman multilateral ADB/World Bank (bunga 2–4%) + 30% ekuitas swasta + 20% hibah iklim (GCF/CIF). Menurunkan WACC dari ~12% menjadi ~7%, meningkatkan IRR ke level yang menarik investor. Terbukti di proyek Sarulla (330 MW).'],
-      ['Geothermal Production Tax Credit (GPTC)', 'Insentif pajak berbasis kinerja ekuivalen USD 3/kg H₂ hijau dari panas bumi. Terinspirasi IRA Amerika Serikat. Simulasi: LCOH turun dari USD 6,52 → USD 3,52/kg. Hanya mengalir jika produksi aktual terjadi — mengurangi moral hazard.'],
-      ['H₂ Offtake Agreement sebagai Collateral', 'Kontrak pembelian H₂ 10–20 tahun dari Jepang (NEDO) / Korea (KOGAS) dijadikan jaminan bank untuk project finance. Mengubah uncertainty pasar H₂ menjadi kepastian yang bankable.'],
-      ['Geothermal Revenue Pooling', 'WKP kecil (5–10 MW) yang tidak ekonomis sendiri digabung dalam satu SPV untuk mencapai skala minimum ≥50 MW. Membuka akses pendanaan WKP terpencil yang selama ini terabaikan.'],
-      ['Indonesia Geothermal-Hydrogen Authority (IGHA)', 'Badan koordinasi lintas kementerian mengintegrasikan perizinan (ESDM+KLHK+BPN), pendanaan GERG, dan negosiasi offtake H₂. Dibentuk via Perpres tanpa legislasi baru.'],
+      ['Blended Finance 50:30:20', '50% multilateral loans (ADB/World Bank, 2–4% interest) + 30% private equity + 20% climate grants (GCF/CIF). Reduces WACC from ~12% to ~7%, increasing IRR to attractive levels. Proven in the Sarulla project (330 MW).'],
+      ['Geothermal Production Tax Credit (GPTC)', 'Performance-based tax incentive equivalent to USD 3/kg green H₂ from geothermal. Inspired by the U.S. IRA. Simulation: LCOH drops from USD 6.52 → USD 3.52/kg. Only flows with actual production — reducing moral hazard.'],
+      ['H₂ Offtake Agreement as Collateral', '10–20 year H₂ purchase agreements from Japan (NEDO) / Korea (KOGAS) used as collateral for project finance. Converts market uncertainty into bankable certainty.'],
+      ['Geothermal Revenue Pooling', 'Small WKPs (5–10 MW) aggregated into one SPV to reach ≥50 MW scale. Unlocks financing for remote fields previously overlooked.'],
+      ['Indonesia Geothermal-Hydrogen Authority (IGHA)', 'Cross-ministerial body integrating licensing (ESDM+KLHK+BPN), GERG funding, and H₂ offtake negotiations. Established via Presidential Regulation without new legislation.'],
     ],
-    innovations:['GPTC: insentif pajak berbasis kinerja, hanya aktif saat produksi riil terjadi.','Revenue Pooling: agregasi WKP kecil jadi satu SPV bankable.','H₂ Offtake sebagai collateral bank — mengubah uncertainty jadi kepastian.'],
+    innovations:['GPTC: performance-based tax incentive activated only upon real production.','Revenue Pooling: aggregation of small WKPs into a bankable SPV.','H₂ Offtake as bank collateral — converting uncertainty into certainty.'],
   },
   {
-    id:4, name:'Sistem Kaskade H₂ Hijau', sub:'AWE · 4 Aliran Pendapatan · CBA',
-    num:'LAPISAN 05 / 05', color:'#1de9b6', icon:'⚗️',
-    desc:'Lapisan paling transformatif IGDOF-GH: fluida panas bumi dimanfaatkan pada empat tingkat temperatur secara berurutan. Output utama adalah hidrogen hijau dari AWE. Sistem ini menghasilkan USD 9–11 juta/tahun dari satu lapangan 10 MW — jauh melampaui model listrik-saja.',
-    metrics:[['~444 ton','H₂/tahun per 10MW'],['USD 6,52/kg','LCOH AWE kini'],['USD 2–4/kg','Target LCOH 2030'],['4 stream','Aliran Pendapatan']],
+    id:4, name:'Green H₂ Cascade System', sub:'AWE · 4 Revenue Streams · CBA',
+    num:'LAYER 05 / 05', color:'#1de9b6', icon:'⚗️',
+    desc:'The most transformative layer of IGDOF-GH: geothermal fluid is utilized across four temperature levels sequentially. The main output is green hydrogen via AWE. This system generates USD 9–11M/year from a single 10 MW field—far exceeding the electricity-only model.',
+    metrics:[['~444 tons','H₂/year per 10MW'],['USD 6.52/kg','Current AWE LCOH'],['USD 2–4/kg','2030 Target LCOH'],['4 streams','Revenue Streams']],
     items:[
-      ['Tingkat 1 — 150–250°C → Listrik + H₂', 'Pembangkit binary/flash menghasilkan listrik. 30% output dialokasikan ke AWE: 24.000 MWh/tahun → ~444 ton H₂/tahun. Katoda: 4H₂O + 4e⁻ → 2H₂ + 4OH⁻. Anoda: 4OH⁻ → O₂ + 2H₂O + 4e⁻.'],
-      ['Tingkat 2 — 80–120°C → Agro-Industri', 'Panas sisa untuk pengeringan kopi, kopra, dan ikan — komoditas utama di sekitar WKP Indonesia. Pendapatan estimasi USD 1–2 juta/tahun. Dioperasikan komunitas lokal.'],
-      ['Tingkat 3 — 30–50°C → Akuakultur', 'Panas terendah untuk budidaya ikan air hangat dan pertanian. Dioperasikan komunitas lokal sebagai bagian dari CBA. Memberi manfaat langsung yang terasa.'],
-      ['Tingkat 4 — Brine → Ko-produk Mineral', 'Ekstraksi litium dan silika dari brine sisa. Bernilai tinggi di pasar baterai EV global. Aliran pendapatan ke-4 dari satu lapangan sumur.'],
-      ['Community Benefit Agreement (CBA)', 'Perjanjian legally binding: komunitas dapat 2–5% revenue sharing + hak preferensial kelola fasilitas Tingkat 2–3. Terbukti eliminasi resistansi sosial di Olkaria (Kenya) dan Wairakei (NZ).'],
+      ['Level 1 — 150–250°C → Power + H₂', 'Binary/flash plant generates electricity. 30% allocated to AWE: 24,000 MWh/year → ~444 tons H₂/year. Cathode: 4H₂O + 4e⁻ → 2H₂ + 4OH⁻. Anode: 4OH⁻ → O₂ + 2H₂O + 4e⁻.'],
+      ['Level 2 — 80–120°C → Agro-Industry', 'Residual heat for drying coffee, copra, and fish—key commodities near Indonesian WKPs. Estimated revenue USD 1–2M/year. Operated by local communities.'],
+      ['Level 3 — 30–50°C → Aquaculture', 'Lowest heat for warm-water fish farming and agriculture. Community-operated under CBA. Provides direct tangible benefits.'],
+      ['Level 4 — Brine → Mineral Co-Products', 'Extraction of lithium and silica from residual brine. High value in the global EV battery market. Fourth revenue stream from a single field.'],
+      ['Community Benefit Agreement (CBA)', 'Legally binding agreement: communities receive 2–5% revenue sharing + preferential rights to manage Level 2–3 facilities. Proven to eliminate social resistance in Olkaria (Kenya) and Wairakei (NZ).'],
     ],
-    rxn:'AWE: 2H₂O + listrik → 2H₂ + O₂\nKatoda (−): 4H₂O + 4e⁻ → 2H₂↑ + 4OH⁻\nAnoda (+): 4OH⁻ → O₂↑ + 2H₂O + 4e⁻\nKonsumsi: ~54 kWh/kg H₂ · ΔG = +237 kJ/mol',
-    innovations:['CBA legally binding: 2–5% revenue sharing untuk komunitas.','Kondensat uap = sumber air gratis untuk AWE.','4 aliran pendapatan = pendapatan 60–100% lebih tinggi dari model listrik-saja.'],
+    rxn:'AWE: 2H₂O + electricity → 2H₂ + O₂\nCathode (−): 4H₂O + 4e⁻ → 2H₂↑ + 4OH⁻\nAnode (+): 4OH⁻ → O₂↑ + 2H₂O + 4e⁻\nConsumption: ~54 kWh/kg H₂ · ΔG = +237 kJ/mol',
+    innovations:['Legally binding CBA: 2–5% revenue sharing for communities.','Steam condensate = free water source for AWE.','4 revenue streams = 60–100% higher income than electricity-only model.'],
   },
 ];
 
@@ -378,17 +378,17 @@ function openDetail(n) {
   `</div>`;
 
   // Components
-  html += `<div class="detail-section"><div class="ds-label">Komponen Utama</div><div class="ds-items">` +
+  html += `<div class="detail-section"><div class="ds-label">Main Components</div><div class="ds-items">` +
     L.items.map(([t,d])=>`<div class="ds-item"><div class="ds-item-dot" style="background:${L.color}"></div><div class="ds-item-text"><strong>${t}</strong><br>${d}</div></div>`).join('') +
   `</div></div>`;
 
   // Reaction box if L5
   if(L.rxn) {
-    html += `<div class="detail-section"><div class="ds-label">Reaksi Elektrokimia AWE</div><div class="rxn-box">${L.rxn.replace(/\n/g,'<br>')}</div></div>`;
+    html += `<div class="detail-section"><div class="ds-label">AWE Electrochemical Reaction</div><div class="rxn-box">${L.rxn.replace(/\n/g,'<br>')}</div></div>`;
   }
 
   // Innovations
-  html += `<div class="detail-section"><div class="ds-label">⚡ Inovasi Kunci</div><div class="ds-items">` +
+  html += `<div class="detail-section"><div class="ds-label">⚡ Key Innovations</div><div class="ds-items">` +
     L.innovations.map(t=>`<div class="ds-item"><div class="ds-item-dot" style="background:${L.color};border-radius:50%"></div><div class="ds-item-text">${t}</div></div>`).join('') +
   `</div></div>`;
 
@@ -402,7 +402,7 @@ function closeDetail() {
   document.getElementById('detailPanel').classList.remove('open');
   highlightLayer(-1);
 }
-
+  
 /* ══════════════════════════════════════════════
    THREE.JS SCENE
 ══════════════════════════════════════════════ */
@@ -435,10 +435,10 @@ const fill = new THREE.DirectionalLight(0x2244aa,0.4);
 fill.position.set(-20,20,-20); scene.add(fill);
 
 /* LAYER CONFIG:
-   5 layers spread along X axis, stacked at Y elevations 0–4
-   Each layer has a main platform + several sub-modules
-   Layout: L1 leftmost at x=-20, L5 rightmost at x=20
-   Y: each layer at y = layer_index * 4 (stacked upward)
+   5 layers distributed along the X axis, stacked vertically along Y (0–4)
+   Each layer consists of a main platform + several sub-modules
+   Layout: L1 at the far left (x = -20), L5 at the far right (x = 20)
+   Y-axis: each layer positioned at y = layer_index * 4 (vertical stacking)
 */
 const LCOLORS = [0xff6b2b, 0x3b9aff, 0x8b5cf6, 0xf59e0b, 0x1de9b6];
 const LX = [-22, -11, 0, 11, 22]; // X positions for each layer
@@ -578,11 +578,11 @@ LAYERS.forEach((L,li) => {
     }
     // Cascade tiers
     const tiers=[
-      [-3,1.2,3.5,'Listrik+H₂',0x1de9b6],
-      [0,0.8,3,'Agro',0xf59e0b],
-      [3,0.6,2.5,'Akua',0x4fc3f7],
-      [0,0.5,2,'Mineral',0xc96bff],
-    ];
+      [-3,1.2,3.5,'Electricity + H₂',0x1de9b6],
+      [0,0.8,3,'Agro-Industry',0xf59e0b],
+      [3,0.6,2.5,'Aquaculture',0x4fc3f7],
+      [0,0.5,2,'Minerals',0xc96bff],
+];
     tiers.forEach(([tx,th,tw,tn,tc],ti)=>{
       const tm=addBox(tw,th,tw*0.7+1, stdMat(tc,0.5,0.2,0.08), cx+tx, cy+0.25+th/2, cz+3+ti*0.5, grp);
       tm.userData.layerIdx=li; clickableMeshes.set(tm,li);
@@ -684,11 +684,11 @@ function roundRect(ctx,x,y,w,h,r) {
 }
 
 const spriteLabels2 = [
-  ['Penilaian IKG','5 Dimensi + ML Ensemble','#ff6b2b','L1'],
-  ['Kelayakan 4 Dimensi','EPI · ROA · Slim-Hole · SWGL','#3b9aff','L2'],
-  ['Pengeboran Bertahap','4 Fase + Pintu Keputusan + GERG','#8b5cf6','L3'],
-  ['Inovasi Finansial','GPTC · Blended · IGHA · Pooling','#f59e0b','L4'],
-  ['Kaskade H₂ Hijau','AWE · 4 Aliran Pendapatan · CBA','#1de9b6','L5'],
+  ['IKG Assessment','5 Dimensions + ML Ensemble','#ff6b2b','L1'],
+  ['4D Feasibility','EPI · ROA · Slim-Hole · SWGL','#3b9aff','L2'],
+  ['Phased Drilling','4 Phases + Decision Gates + GERG','#8b5cf6','L3'],
+  ['Financial Innovation','GPTC · Blended · IGHA · Pooling','#f59e0b','L4'],
+  ['Green H₂ Cascade','AWE · 4 Revenue Streams · CBA','#1de9b6','L5'],
 ];
 spriteLabels2.forEach(([t,s,c,n],i) => {
   const sp = makeLayerSprite(t,s,c,n);
@@ -698,11 +698,11 @@ spriteLabels2.forEach(([t,s,c,n],i) => {
 
 /* ── METRIC CHIPS on each platform ── */
 const metricData = [
-  ['IKG ≥6/10','±15% Uncertainty','5 Dimensi','78% Konfirmasi'],
-  ['4 Paralel','18–24 bln','−40% Biaya','P10/P50/P90'],
-  ['4 Fase','GERG 50–70%','−30% Risiko','USD 1–2jt/Fase0'],
-  ['WACC ~7%','GPTC $3/kg','50:30:20','$9–11jt/thn'],
-  ['444 ton H₂','$6,52/kg LCOH','4 Stream','CBA 2–5%'],
+  ['IKG ≥6/10','±15% Uncertainty','5 Dimensions','78% Confirmation'],
+  ['4 Parallel','18–24 months','−40% Cost','P10/P50/P90'],
+  ['4 Phases','GERG 50–70%','−30% Risk','USD 1–2M/Phase 0'],
+  ['WACC ~7%','GPTC $3/kg','50:30:20','$9–11M/year'],
+  ['444 tons H₂','$6.52/kg LCOH','4 Streams','CBA 2–5%'],
 ];
 
 metricData.forEach((metrics,li)=>{
@@ -800,11 +800,11 @@ const mouse = new THREE.Vector2();
 const tooltipEl = document.getElementById('tooltip');
 
 const layerTips = [
-  'Lapisan 1: Indeks Kelayakan Geothermal\nML-IKG · 5 Dimensi · Go/No-Go Decision',
-  'Lapisan 2: Kelayakan Awal 4 Dimensi\nEPI · Slim-Hole · Real Options · SWGL',
-  'Lapisan 3: Pengeboran Bertahap\n4 Fase + Pintu Keputusan + GERG',
-  'Lapisan 4: Inovasi Finansial\nGPTC · Blended Finance · IGHA · Pooling',
-  'Lapisan 5: Kaskade H₂ Hijau\nAWE · 444 ton/thn · 4 Aliran Pendapatan',
+  'Layer 1: Geothermal Feasibility Index\nML-IKG · 5 Dimensions · Go/No-Go Decision',
+  'Layer 2: 4D Preliminary Feasibility\nEPI · Slim-Hole · Real Options · SWGL',
+  'Layer 3: Phased Drilling\n4 Phases + Decision Gates + GERG',
+  'Layer 4: Financial Innovation\nGPTC · Blended Finance · IGHA · Pooling',
+  'Layer 5: Green H₂ Cascade\nAWE · 444 tons/year · 4 Revenue Streams',
 ];
 
 window.addEventListener('mousemove',e=>{
